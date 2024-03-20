@@ -1,32 +1,33 @@
-﻿# The script of the game goes in this file.
+﻿
+# personagens
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+define p = Character("Pisquinha")
+define h = Character("Husk")
+define k = Character("Kai")
 
-define e = Character("Eileen")
-
-
-# The game starts here.
+# o jogo começa aqui
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    
 
-    scene bg room
+    scene cenarioluacheia
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    "Dois irmãos, Pisquinha e Husk, lutam pela liderança do clã dos lobos"
 
-    show eileen happy
+    show personagempisquinha
 
-    # These display lines of dialogue.
+    p "Não quero brigar com você irmão"
 
-    e "You've created a new Ren'Py game."
+    p "Esta luta não faz sentido pra mim"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    hide personagempisquinha
+
+    h "Deixa de conversa mole Pisquinha"
+
+    h "Isso pra mim tem outro nome"
+
+    h "Covardia"
 
     # This ends the game.
 
